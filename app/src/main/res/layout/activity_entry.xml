@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Entry"
+    android:background="@color/fon">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <View
+                android:id="@+id/Topview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/front" />
+            <View
+                android:id="@+id/Topview1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_wave" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="...Entry..."
+                android:textColor="@color/ddd"
+                android:layout_marginBottom="17dp"
+                android:textSize="37sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="50dp"
+                    android:text="Date"
+                    android:textColor="@color/ddd"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="27sp"/>
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="229dp"
+                    android:layout_height="50dp"
+                    android:hint="---Date---"
+                    android:inputType="date"
+                    android:fontFamily="serif"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="60dp"
+                    android:text="Price"
+                    android:textColor="@color/ddd"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:textSize="27sp"/>
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="229dp"
+                    android:layout_height="60dp"
+                    android:hint="....Enter...."
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="serif"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="50dp"
+                    android:text="Volume"
+                    android:textColor="@color/ddd"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textSize="27sp"/>
+                <EditText
+                    android:id="@+id/volume"
+                    android:layout_width="229dp"
+                    android:layout_height="60dp"
+                    android:hint="--------"
+                    android:inputType="number"
+                    android:fontFamily="serif"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="60dp"
+                    android:text="Odometer"
+                    android:textColor="@color/ddd"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:textSize="27sp"/>
+                <EditText
+                    android:id="@+id/odometer"
+                    android:layout_width="229dp"
+                    android:layout_height="60dp"
+                    android:hint="--------"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:text="SUBMIT"
+                android:textSize="35sp"
+                android:fontFamily="serif"/>
+            <Button
+                android:id="@+id/report"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:text="report"
+                android:textSize="35sp"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+

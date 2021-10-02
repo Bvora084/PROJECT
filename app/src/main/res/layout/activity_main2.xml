@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/fon">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <View
+                android:id="@+id/Topview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/front" />
+            <View
+                android:id="@+id/Topview1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_wave" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Registration"
+                android:textColor="@color/ddd"
+                android:textSize="37sp" />
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="161dp"
+                android:layout_height="60dp"
+                android:text="First name"
+                android:textColor="@color/ddd"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="27sp"/>
+            <EditText
+                android:id="@+id/etfname"
+                android:layout_width="229dp"
+                android:layout_height="60dp"
+                android:hint="First Name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="60dp"
+                    android:text="Last name"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ddd"
+                    android:gravity="center"
+                    android:textSize="27sp"/>
+
+                <EditText
+                    android:id="@+id/etlname"
+                    android:layout_width="229dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="60dp"
+                    android:hint="Last Name"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="60dp"
+                    android:text="Mobile no :-"
+                    android:textColor="@color/ddd"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="28sp"/>
+                <EditText
+                    android:id="@+id/etMobno"
+                    android:layout_width="229dp"
+                    android:layout_height="60dp"
+                    android:hint="Enter no"
+                    android:digits="0123456789+"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbmale"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/rbfemale"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:text="Female"
+                    android:textSize="30sp"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swShift"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:text="Shift : Day | Night"
+                android:textSize="25sp"/>
+            <Spinner
+                android:id="@+id/spcity"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:entries="@array/age" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:onClick="click"
+                android:text="SUBMIT"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+

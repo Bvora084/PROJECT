@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Project1</string>
+
+    <string-array name="age">
+        <item>18-28</item>
+        <item>28-38</item>
+        <item>38-49</item>
+        <item>49-59</item>
+        <item>59-69</item>
+        <item>70</item>
+
+
+    </string-array>
+</resources>
